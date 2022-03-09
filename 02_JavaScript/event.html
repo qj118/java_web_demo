@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <script type="text/javascript">
+
+        function staticOnclick()
+        {
+            alert("onclick 事件静态注册 。。。");
+        }
+
+        window.onload = function(){
+            /**
+             * document 是 Javascript 语言提供的一个对象，指整个页面
+             */
+            var dynamic = document.getElementById("dynamic_btn");
+            dynamic.onclick = function()
+            {
+                alert("onclick 事件动态注册 。。。");
+            }
+
+        }
+    </script>
+</head>
+<body>
+<button onclick="staticOnclick();">静态注册</button>
+<button id="dynamic_btn">动态注册</button>
+</body>
+</html>

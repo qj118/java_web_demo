@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateElement</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var divObj = document.createElement("div");
+            divObj.innerHTML = "用 document 创建标签";
+            // 要想使用 body 需要整个页面加载完毕，所以需要写在 window.onload 方法中
+            document.body.appendChild(divObj);
+
+            // html 文件中，text 也是一个节点
+            var divObj_2 = document.createElement("div");
+            var textNodeObj = document.createTextNode("文本也是一个节点");
+            divObj_2.appendChild(textNodeObj);
+            document.body.appendChild(divObj_2);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

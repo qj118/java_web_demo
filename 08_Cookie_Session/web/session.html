@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session</title>
+    <style type="text/css">
+
+        ul li {
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <iframe name="target" width="500" height="500" style="float: left;"></iframe>
+    <div style="float: left;">
+        <ul>
+            <li><a href="session?action=getSession" target="target">Session的创建和获取</a></li>
+            <li><a href="session?action=setAttribute" target="target">Session域数据的存储</a></li>
+            <li><a href="session?action=getAttribute" target="target">Session域数据的获取</a></li>
+            <li>Session的存活</li>
+            <li>
+                <ul>
+                    <li><a href="session?action=getLife" target="target">Session默认超时</a></li>
+                    <li><a href="session?action=setLife" target="target">Session三秒超时</a></li>
+                    <li><a href="session?action=deleteNow" target="target">Session立刻销毁</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var elements = $("label + input");
+            for(var i = 0; i < elements.length; i++)
+            {
+                alert(elements[i].outerHTML);
+            }
+        });
+    </script>
+</head>
+<body>
+<form>
+    <label>Name:</label>
+    <input name="name"/>
+    <fieldset>
+        <label>Newsletter:</label>
+        <input name="newsletter"/>
+    </fieldset>
+</form>
+<input name="none" />
+
+</body>
+</html>

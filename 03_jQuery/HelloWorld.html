@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello jQuery</title>
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $( function(){
+            var $btnObj = $("#btnId");
+            $btnObj.click( function(){
+                alert("jQuery 的单击事件！");
+            } )
+        })
+    </script>
+</head>
+<body>
+    <button id="btnId">Say Hello</button>
+</body>
+</html>

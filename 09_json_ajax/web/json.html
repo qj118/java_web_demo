@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <script type="text/javascript">
+        var jsonObj = {
+          "key1": 27,
+          "key2": "abc",
+          "key3": false,
+          "key4": [527, "string", true],
+          "key5":{
+              "key5_1": 5277,
+              "key5_2": "she"
+          },
+          "key6":[{
+              "key6_1_1": 77,
+              "key6_1_2": "mmq"
+          },{
+              "key6_2_1": 7,
+              "key6_2_2": "m77"
+          }]
+        };
+        // console.info(jsonObj.key1);
+        // console.info(jsonObj.key4[0]);
+        // console.info(jsonObj.key5.key5_1);
+        // console.info(jsonObj.key6[1].key6_2_2);
+        var jsonString = JSON.stringify(jsonObj);
+        console.info(jsonString);
+        var jsonObj2= JSON.parse(jsonString);
+        console.info(jsonObj2.key6[0].key6_1_1);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#id").click(function (event) {
+                console.log(event);
+            });
+            $("#id").bind("mouseover mouseout", function (event) {
+                if(event.type == "mouseover"){
+                    console.log("鼠标移入");
+                }else if(event.type == "mouseout"){
+                    console.log("鼠标移出");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

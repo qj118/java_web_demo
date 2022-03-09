@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="09_json_ajax:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/09_json_ajax_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="09_json_ajax/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="09_json_ajax" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.google.code.gson:gson:2.8.6" />
+          <element id="library" level="module" name="JUnit4" module-name="09_json_ajax" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

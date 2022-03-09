@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Core Function</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("<div>" +
+                "        <span>div-span1</span>" +
+                "        <span>div-span2</span>" +
+                "</div>"
+            ).appendTo("body");
+
+
+        });
+
+        window.onload = function(){
+            var divObj = document.createElement("div");
+            var spanObj_1 = document.createElement("span");
+            spanObj_1.innerHTML = "div-span1";
+            var spanObj_2 = document.createElement("span");
+            spanObj_2.innerHTML = "div-span2";
+            divObj.appendChild(spanObj_1);
+            divObj.appendChild(spanObj_2);
+            document.body.appendChild(divObj);
+        };
+
+    </script>
+</head>
+<body>
+    <button id="btn_1">button_1</button>
+    <button>button_2</button>
+    <button>button_3</button>
+</body>
+</html>

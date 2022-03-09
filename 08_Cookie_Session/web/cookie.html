@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie</title>
+    <style type="text/css">
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe name="target" width="500" height="400" style="float: left;"></iframe>
+    <div style="float: left;"/>
+        <ul>
+            <li><a href="cookie?action=createCookie" target="target">Create Cookie</a></li>
+            <li><a href="cookie?action=getCookie" target="target">Get Cookie</a></li>
+            <li><a href="cookie?action=updateCookie" target="target">Update Cookie</a></li>
+            <li>Cookie的存活周期</li>
+            <li>
+                <ul>
+                    <li><a href="" target="target">Default</a></li>
+                    <li><a href="cookie?action=deleteNow" target="target">Delete Immediately</a></li>
+                    <li><a href="cookie?action=life3600" target="target">Set Duration</a></li>
+                </ul>
+            </li>
+            <li><a href="cookie?action=testPath" target="target">Set path</a></li>
+            <li><a href="" target="target">免密登录</a></li>
+        </ul>
+    </div>
+</body>
+</html>
